@@ -38,8 +38,11 @@ console.log(movieList);
     <MovieList movies={movieList} />
   </Route>
 
-  <Route path="/movie/:id" component={Movie}/> 
+  {/* <Route path="/movie/:id" component={Movie}/>  */}
+  <Route path="/movie/:id">
   <Movie addToSavedList={addToSavedList} />
+  </Route>
+ 
 </Switch>
     </div>
   );

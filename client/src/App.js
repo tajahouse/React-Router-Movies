@@ -4,6 +4,7 @@ import Movie from './Movies/Movie';
 import MovieList from './Movies/MovieList';
 import SavedList from './Movies/SavedList';
 import { Route, Switch } from "react-router-dom";
+import './index.css';
 
 
 const App = () => {
@@ -38,7 +39,7 @@ console.log(movieList);
   </Route>
 
   <Route path="/movie/:id" component={Movie}/> 
-
+  <Movie addToSavedList={addToSavedList} />
 </Switch>
     </div>
   );
